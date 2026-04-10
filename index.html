@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CIMembership v4 - Modern Membership Management System built with CodeIgniter 4. Secure, scalable, and OAuth-ready.">
+    <meta name="theme-color" content="#dd4814">
+    <title>CIMembership v4 - Modern Membership Management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/main-CMBdtwGD.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-B0vbYgtj.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <div class="logo-symbol">
+                    <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="8" fill="url(#logo-gradient)"/>
+                        <path d="M10 16C10 12.686 12.686 10 16 10V10C19.314 10 22 12.686 22 16V22H16C12.686 22 10 19.314 10 16V16Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="16" cy="16" r="3" fill="white"/>
+                    </svg>
+                </div>
+                <span class="logo-text">CIMembership</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#install">Install</a></li>
+                <li><a href="#security">Security</a></li>
+                <li><a href="#api">API</a></li>
+                <li><a href="https://github.com/cimembership/cimembership" class="nav-cta">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    GitHub
+                </a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="aurora-bg">
+            <div class="aurora aurora-1"></div>
+            <div class="aurora aurora-2"></div>
+            <div class="aurora aurora-3"></div>
+        </div>
+        <div class="grid-pattern"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </span>
+                    <span class="badge-text">Now with CodeIgniter 4</span>
+                </div>
+                <h1 class="hero-title">
+                    Modern Membership
+                    <span class="gradient-text">Management</span>
+                </h1>
+                <p class="hero-subtitle">A secure, scalable membership platform built on CodeIgniter 4. Features OAuth integration, role-based access control, RESTful API, and a stunning admin dashboard.</p>
+                <div class="hero-buttons">
+                    <a href="https://github.com/cimembership/cimembership" class="btn btn-primary">
+                        Get Started
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#features" class="btn btn-secondary">Explore Features</a>
+                </div>
+                <div class="tech-badges">
+                    <span class="tech-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="4" y="4" width="16" height="16" rx="2"/>
+                            <path d="M9 9h6v6H9z"/>
+                        </svg>
+                        PHP 8.1+
+                    </span>
+                    <span class="tech-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                        OAuth 2.0
+                    </span>
+                    <span class="tech-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        MIT Licensed
+                    </span>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="code-title">Terminal — bash</span>
+                    </div>
+                    <div class="code-body">
+                        <div class="code-line">
+                            <span class="code-prompt">$</span>
+                            <span class="code-command">composer create-project</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-indent"></span>
+                            <span class="code-string">cimembership/cimembership</span>
+                        </div>
+                        <div class="code-line success">
+                            <span class="code-icon">✓</span>
+                            <span class="code-text">Installation complete</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-prompt">$</span>
+                            <span class="code-text">php spark install:app</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-cursor"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-card card-security">
+                    <div class="card-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <div class="card-info">
+                        <span class="card-label">Security</span>
+                        <span class="card-value">BCrypt + CSRF</span>
+                    </div>
+                </div>
+                <div class="floating-card card-api">
+                    <div class="card-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="13 2 13 9 20 9"/>
+                            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/>
+                        </svg>
+                    </div>
+                    <div class="card-info">
+                        <span class="card-label">API Ready</span>
+                        <span class="card-value">RESTful</span>
+                    </div>
+                </div>
+                <div class="floating-card card-oauth">
+                    <div class="card-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"/>
+                            <line x1="9" y1="12" x2="15" y2="12"/>
+                        </svg>
+                    </div>
+                    <div class="card-info">
+                        <span class="card-label">OAuth</span>
+                        <span class="card-value">6 Providers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Features</span>
+                <h2 class="section-title">Everything you need to <span class="gradient-text">manage users</span></h2>
+                <p class="section-desc">Built with modern best practices and security in mind. No bloat, just what you need for professional membership management.</p>
+            </div>
+            <div class="bento-grid">
+                <div class="bento-card bento-large">
+                    <div class="bento-glow"></div>
+                    <div class="bento-content">
+                        <div class="bento-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                            </svg>
+                        </div>
+                        <h3>Enterprise Security</h3>
+                        <p>BCrypt password hashing with cost factor 12, CSRF protection on all forms, rate limiting per IP, and secure session management with automatic regeneration.</p>
+                        <div class="feature-pills">
+                            <span class="pill">BCrypt</span>
+                            <span class="pill">CSRF</span>
+                            <span class="pill">Rate Limited</span>
+                            <span class="pill">XSS Protected</span>
+                        </div>
+                    </div>
+                    <div class="bento-visual">
+                        <div class="security-visual">
+                            <div class="shield-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bento-card">
+                    <div class="bento-icon blue">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+                        </svg>
+                    </div>
+                    <h3>OAuth 2.0</h3>
+                    <p>Social login with Google, GitHub, Facebook, LinkedIn, Twitter, and Microsoft. One-click authentication setup.</p>
+                </div>
+                <div class="bento-card">
+                    <div class="bento-icon purple">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Role-Based Access</h3>
+                    <p>Flexible permission system with user groups. Control access granularly.</p>
+                </div>
+                <div class="bento-card">
+                    <div class="bento-icon green">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="9" y1="9" x2="15" y2="15"/>
+                            <line x1="15" y1="9" x2="9" y2="15"/>
+                        </svg>
+                    </div>
+                    <h3>Admin Dashboard</h3>
+                    <p>Beautiful, responsive admin panel with user management and analytics.</p>
+                </div>
+                <div class="bento-card bento-wide">
+                    <div class="bento-icon orange">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <div class="bento-content">
+                        <h3>RESTful API</h3>
+                        <p>Complete API with key authentication. Build headless apps, mobile clients, or integrate with third-party services. API ready out of the box.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="install" class="install-section">
+        <div class="container">
+            <div class="install-grid">
+                <div class="install-content">
+                    <span class="section-label">Quick Start</span>
+                    <h2 class="section-title">Install in <span class="gradient-text">minutes</span>, not hours</h2>
+                    <p class="section-desc">Our modern CLI installer handles database setup, migrations, and initial configuration automatically. Get up and running with a single command.</p>
+                    <div class="install-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Install via Composer</h4>
+                                <p>Creates project and installs all dependencies</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Run the Installer</h4>
+                                <p>Interactive CLI configures database and settings</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Start Building</h4>
+                                <p>Admin user created, ready to customize</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="install-code">
+                    <div class="code-window dark">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="code-tabs">
+                                <span class="tab active">bash</span>
+                            </span>
+                        </div>
+                        <div class="code-body syntax-highlight">
+                            <div class="code-line"><span class="code-comment"># Install via Composer</span></div>
+                            <div class="code-line"><span class="code-command">composer</span> <span class="code-arg">create-project</span> <span class="code-string">cimembership/cimembership</span></div>
+                            <div class="code-line"><span class="code-command">cd</span> <span class="code-string">cimembership</span></div>
+                            <div class="code-line"></div>
+                            <div class="code-line"><span class="code-comment"># Run the interactive installer</span></div>
+                            <div class="code-line"><span class="code-command">php</span> <span class="code-arg">spark</span> <span class="code-arg">install:app</span></div>
+                            <div class="code-line"></div>
+                            <div class="code-line"><span class="code-output">✓ Database configured</span></div>
+                            <div class="code-line"><span class="code-output">✓ Migrations run</span></div>
+                            <div class="code-line"><span class="code-output">✓ Admin user created</span></div>
+                            <div class="code-line"></div>
+                            <div class="code-line"><span class="code-success">Installation complete!</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="security" class="security-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Security</span>
+                <h2 class="section-title">Built with <span class="gradient-text">security</span> in mind</h2>
+                <p class="section-desc">Enterprise-grade security features protect your users and data from day one.</p>
+            </div>
+            <div class="security-grid">
+                <div class="security-card">
+                    <div class="security-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                    </div>
+                    <h3>Password Hashing</h3>
+                    <p>BCrypt with cost factor 12 for secure password storage. Industry standard protection.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3>CSRF Protection</h3>
+                    <p>All forms protected by default. Prevents cross-site request forgery attacks automatically.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>Rate Limiting</h3>
+                    <p>Login attempts limited per IP address. Protects against brute force attacks.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                            <line x1="1" y1="10" x2="23" y2="10"/>
+                        </svg>
+                    </div>
+                    <h3>Session Security</h3>
+                    <p>Sessions regenerated on login. Secure session handling prevents fixation attacks.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <h3>XSS Protection</h3>
+                    <p>Output escaping by default. Protects against cross-site scripting vulnerabilities.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                        </svg>
+                    </div>
+                    <h3>SQL Injection Prevention</h3>
+                    <p>Parameterized queries throughout. No raw SQL vulnerabilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="api" class="api-section">
+        <div class="container">
+            <div class="api-grid">
+                <div class="api-content">
+                    <span class="section-label">API</span>
+                    <h2 class="section-title">RESTful API <span class="gradient-text">ready</span></h2>
+                    <p class="section-desc">Build headless applications, mobile clients, or integrate with third-party services using our complete RESTful API.</p>
+                    <ul class="api-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            API key authentication
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Full CRUD operations for users
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            JSON responses
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Rate limiting support
+                        </li>
+                    </ul>
+                </div>
+                <div class="api-code">
+                    <div class="code-window dark">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="code-tabs">
+                                <span class="tab active">curl</span>
+                                <span class="tab">response</span>
+                            </span>
+                        </div>
+                        <div class="code-body syntax-highlight">
+                            <div class="code-line"><span class="code-comment"># Get users</span></div>
+                            <div class="code-line"><span class="code-command">curl</span> <span class="code-flag">-H</span> <span class="code-string">"X-API-Key: your-key"</span> \</div>
+                            <div class="code-line">  <span class="code-string">https://api.example.com/users</span></div>
+                            <div class="code-line"></div>
+                            <div class="code-line"><span class="code-comment"># Create user</span></div>
+                            <div class="code-line"><span class="code-command">curl</span> <span class="code-flag">-X</span> <span class="code-arg">POST</span> \</div>
+                            <div class="code-line">  <span class="code-flag">-H</span> <span class="code-string">"X-API-Key: your-key"</span> \</div>
+                            <div class="code-line">  <span class="code-flag">-H</span> <span class="code-string">"Content-Type: application/json"</span> \</div>
+                            <div class="code-line">  <span class="code-flag">-d</span> <span class="code-string">'{"username":"john",</span></div>
+                            <div class="code-line">    <span class="code-string">"email":"john@example.com"}'</span> \</div>
+                            <div class="code-line">  <span class="code-string">/api/users</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="upgrade-section">
+        <div class="container">
+            <div class="upgrade-card">
+                <div class="upgrade-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2v20M2 12h20M12 2l4 4M12 2l-4 4M12 22l4-4M12 22l-4-4M22 12l-4-4M22 12l-4 4M2 12l4-4M2 12l4 4"/>
+                    </svg>
+                </div>
+                <h2>Seamless Upgrade from v3</h2>
+                <p>Migrating from CIMembership v3 (CodeIgniter 3)? Our upgrade command migrates your users, groups, profiles, and settings automatically.</p>
+                <div class="code-snippet">
+                    <code>php spark upgrade:fromv3 --source-db=old_db --source-prefix=ci_</code>
+                    <button class="copy-btn" title="Copy to clipboard">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="aurora-bg">
+            <div class="aurora aurora-1"></div>
+            <div class="aurora aurora-2"></div>
+        </div>
+        <div class="container">
+            <h2>Ready to build your membership platform?</h2>
+            <p>Join developers worldwide using CIMembership to power their user management. Open source and free forever.</p>
+            <div class="cta-buttons">
+                <a href="https://github.com/cimembership/cimembership" class="btn btn-white">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    Star on GitHub
+                </a>
+                <a href="https://github.com/cimembership/cimembership/blob/main/README.md" class="btn btn-outline-white">Read Documentation</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <div class="logo-symbol">
+                            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="8" fill="url(#logo-gradient)"/>
+                                <path d="M10 16C10 12.686 12.686 10 16 10V10C19.314 10 22 12.686 22 16V22H16C12.686 22 10 19.314 10 16V16Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="16" cy="16" r="3" fill="white"/>
+                            </svg>
+                        </div>
+                        <span>CIMembership</span>
+                    </a>
+                    <p>Modern membership management built for CodeIgniter 4. Open source and free forever under MIT license.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/cimembership/cimembership" aria-label="GitHub">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/cimembership/cimembership/discussions" aria-label="Discussions">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#install">Installation</a>
+                    <a href="https://github.com/cimembership/cimembership/releases">Changelog</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <a href="https://github.com/cimembership/cimembership/blob/main/README.md">Documentation</a>
+                    <a href="https://github.com/cimembership/cimembership/issues">Issues</a>
+                    <a href="https://github.com/cimembership/cimembership/discussions">Discussions</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="https://github.com/cimembership/cimembership/blob/main/LICENSE">MIT License</a>
+                    <a href="https://github.com/cimembership/cimembership/blob/main/CONTRIBUTING.md">Contributing</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CIMembership. Built with CodeIgniter 4.</p>
+            </div>
+        </div>
+    </footer>
+
+    <svg style="display: none;">
+        <defs>
+            <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#dd4814"/>
+                <stop offset="100%" style="stop-color:#ff6b3d"/>
+            </linearGradient>
+        </defs>
+    </svg>
+</body>
+</html>
